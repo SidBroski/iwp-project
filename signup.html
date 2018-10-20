@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SECONDHANDBOOKS</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div class="page">
+            <div class="page-in">
+                <div class="header">
+                    <div class="topmenu">
+
+                        <img class="logo" src="logo/newlogo2.png" alt="logo" align="left" width="180px" height="75px" style="padding-left: 10px; padding-top: 10px" />
+
+                            <ul>
+                                <li><a href="home.html">HOME</a></li>
+                                <li><a href="shop.html">SHOP</a></li>
+                                <li><a href="sell.html">SELL</a></li>
+                                <li><a href="login.html">LOGIN</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                    </div>
+                    <img src="images/main.jpg" alt="Library" width="995" height="378">
+                </div>
+                <form action="sign.php" name="Form" class="register" method="POST">
+                    <h1>Sign up</h1>
+                    <fieldset class="row1">
+                    <p>
+                        <label>Name *
+                        </label>
+                        <input type="text" name="name" class="long" required>
+                    </p>
+				    <p>
+                        <label>Username *
+                        </label>
+                        <input type="text" name="user" class="long" required>
+                    </p>
+				    <p>
+                        <label>Email*</label>
+                        <input type="email" name="email" class="long" required>
+                    </p>
+				    <p>
+                        <label>Password*</label>
+                        <input type="password" name="pass" class="long" required>
+                        </p>
+				    <p>
+                        <label>Retype Password*</label>
+                        <input type="password" name="rpass" class="long" required>
+                    </p>
+                    <p>
+                        <label>Phone*</label>
+                        <input type="text" name="phone" maxlength="10" required>
+                    </p>
+				    <p>
+                        <label>State*</label>
+                        <select name="state" required>
+                            <option>
+                            </option>
+                            <option value="1">Tamil Nadu
+                            </option>
+                            <option value="2">Karnataka
+                            </option>
+                            <option value="3">Kerala
+                            </option>
+                            <option value="4">Andhra Pradesh
+                            </option>
+                            <option value="5">Telangana
+                            </option>
+                            <option value="6">Maharashtra
+                            </option>
+                            <option value="7">Madhya Pradesh
+                            </option>
+                        </select>
+                    </p>
+                    <p>
+                        <label class="optional">Address
+                        </label>
+                        <input type="text" name="address" class="long"/>
+                        <label class="optional">PIN
+                        </label>
+                        <input type="number" name="PIN"/>
+                    </p>
+                
+                    </fieldset>
+                    <div><button type="submit" class="button">Sign up </button></div>
+                    <div><button type="reset" class="button">Clear </button></div>
+                </form>
+
+                <div class="footer">
+                <p class="copyright-text">&copy;Designed by Siddharth Krishna</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
